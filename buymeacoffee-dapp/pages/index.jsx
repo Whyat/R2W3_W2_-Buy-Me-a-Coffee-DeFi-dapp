@@ -7,7 +7,7 @@ import styles from '../styles/Home.module.css'
 
 export default function Home() {
   // Contract Address & ABI
-  const contractAddress = "0xf499546186d98542d74cc9abb74e3fe1154886d0";
+  const contractAddress = "0x668fdb08caf16ad100c72e6ceb7e61b22968bdab";
   const contractABI = abi.abi;
 
   // Component state
@@ -218,7 +218,7 @@ export default function Home() {
                     (memo, idx) => {
                         return (      
                                 <div key={idx} className={styles.Memocss}>
-                                    <p style={{ "fontWeight": "bold" }}>`{memo.message}`</p>
+                                    <p>{memo.message}</p>
                                     <p>From: {memo.name} at {memo.timestamp.toString()}</p>
                                 </div>
                         )
